@@ -87,9 +87,6 @@ $("#clear").on("click", function () {
 //4.履歴の表示
 $("#echo").on("click", function () {
   $("#list").html("");
-  let count = localStorage.getItem("受付番号") || 0;
-  count++;
-  localStorage.setItem("受付番号", count);
 
   const history = {}; // chatGPT  履歴を格納するオブジェクト
 
